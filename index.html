@@ -10,25 +10,28 @@
     
    <div id="calculadora">
         <div id="visor">0</div>
-        <div class='func' id="ac">AC</div>
-        <div class='func' id="n=">%</div>
-        <div class='func' id="n/">/</div>
-        <div class='botao' id="n7" onclick="atualizar(this)">7</div>
-        <div class='botao' id="n8" onclick="atualizar(this)">8</div>
-        <div class='botao' id="n9" onclick="atualizar(this)">9</div>
-        <div class='func' id="n*">*</div>
-        <div class='botao' id="n4" onclick="atualizar(this)">4</div>
-        <div class='botao' id="n5" onclick="atualizar(this)">5</div>
-        <div class='botao' id="n6" onclick="atualizar()">6</div>
-        <div class='func' id="n-">-</div>
-        <div class='botao' id="n1" onclick="atualizar(this)">1</div>
-        <div class='botao' id="n2" onclick="atualizar(this)">2</div>
-        <div class='botao' id="n3" onclick="atualizar(this)">3</div>
-        <div class='func' id="n+">+</div>
+        <div class='func' id="ac" onclick="limpar()">AC</div>
+        <div class='func'>%</div>
+        <div class='func' >/</div>
+        <div class='botao' onclick="atualizar(this)">7</div>
+        <div class='botao' onclick="atualizar(this)">8</div>
+        <div class='botao' onclick="atualizar(this)">9</div>
+        <div class='func' >*</div>
+        <div class='botao' onclick="atualizar(this)">4</div>
+        <div class='botao' onclick="atualizar(this)">5</div>
+        <div class='botao' onclick="atualizar(this)">6</div>
+        <div class='func' onclick="sub()">-</div>
+        <div class='botao' onclick="atualizar(this)">1</div>
+        <div class='botao' onclick="atualizar(this)">2</div>
+        <div class='botao' onclick="atualizar(this)">3</div>
+        <div class='func' onclick="somar()">+</div>
         <div class='botao' id="n0" onclick="atualizar(this)">0</div>
-        <div class='func' id="n=">,</div>
-        <div class='func' id="n=">=</div>        
+        <div class='func'>,</div>
+        <div class='func' onclick="resultado()">=</div>        
         
+
+   </div>
+   <div id="cons">
 
    </div>
    <script src="calc.js"></script>
