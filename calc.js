@@ -1,6 +1,5 @@
 var visor = document.getElementById('visor')
 var div = document.getElementsByName('botao'); 
-var c = document.getElementById('cons')
 var primeirovalor = 0
 var segundovalor = 0
 var opercacao = ''
