@@ -3,6 +3,7 @@ var div = document.getElementsByName('botao');
 var c = document.getElementById('cons')
 var primeirovalor = 0
 var segundovalor = 0
+var opercacao = ''
 
 
 function atualizar(elemento){
@@ -20,7 +21,43 @@ function somar(){
     var num = parseFloat(valor)
     visor.innerHTML = 0 
     primeirovalor = num 
-    segundovalor = 0  // reseta o segundo valor da var para receber um novo
+    segundovalor = 0 
+    opercacao = '+'
+}
+
+function sub(){
+    var valor = visor.innerHTML;
+    var num = parseFloat(valor)
+    visor.innerHTML = 0 
+    primeirovalor = num 
+    segundovalor = 0  
+    opercacao = '-'
+}
+
+function mult(){
+    var valor = visor.innerHTML;
+    var num = parseFloat(valor)
+    visor.innerHTML = 0 
+    primeirovalor = num 
+    segundovalor = 0  
+    opercacao = '*'
+}
+
+function dividir(){
+    var valor = visor.innerHTML;
+    var num = parseFloat(valor)
+    visor.innerHTML = 0 
+    primeirovalor = num 
+    segundovalor = 0  
+    opercacao = '/'
+}
+
+function porcentagem(){
+    var valor = visor.innerHTML;
+    var num = parseFloat(valor)
+    primeirovalor = num 
+    opercacao = '%'
+    visor.innerHTML = primeirovalor  / 100 
 }
 
 function resultado(){
@@ -30,17 +67,18 @@ function resultado(){
         segundovalor = num
     }
     if (segundovalor != 0 && primeirovalor != 0){
+        if (opercacao == '+'){
         visor.innerHTML = primeirovalor += segundovalor
+        } else if (opercacao == '-'){
+            visor.innerHTML = primeirovalor -= segundovalor
+        }else if (opercacao == '/'){
+            visor.innerHTML = primeirovalor /= segundovalor
+        }else if (opercacao == '*'){
+            visor.innerHTML = primeirovalor *= segundovalor
+        }
+
     }
 }
-
-function sub(){
-    var valor = visor.innerHTML;
-    var num = parseFloat(valor)
-    visor.innerHTML = 0 
-    primeirovalor = num
-}
-
 
 
 function limpar(){

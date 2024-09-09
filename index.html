@@ -11,12 +11,12 @@
    <div id="calculadora">
         <div id="visor">0</div>
         <div class='func' id="ac" onclick="limpar()">AC</div>
-        <div class='func'>%</div>
-        <div class='func' >/</div>
+        <div class='func'onclick="porcentagem()" >%</div>
+        <div class='func' onclick="dividir()">/</div>
         <div class='botao' onclick="atualizar(this)">7</div>
         <div class='botao' onclick="atualizar(this)">8</div>
         <div class='botao' onclick="atualizar(this)">9</div>
-        <div class='func' >*</div>
+        <div class='func' onclick="mult()">*</div>
         <div class='botao' onclick="atualizar(this)">4</div>
         <div class='botao' onclick="atualizar(this)">5</div>
         <div class='botao' onclick="atualizar(this)">6</div>
@@ -26,7 +26,7 @@
         <div class='botao' onclick="atualizar(this)">3</div>
         <div class='func' onclick="somar()">+</div>
         <div class='botao' id="n0" onclick="atualizar(this)">0</div>
-        <div class='func'>,</div>
+        <div class='func'onclick="atualizar(this)">.</div>
         <div class='func' onclick="resultado()">=</div>        
         
 
