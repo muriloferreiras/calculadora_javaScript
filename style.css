@@ -1,9 +1,11 @@
 @charset "UFT-8";
 
 body {
-    background-color: rgba(0, 0, 0, 0.493);
+    background-image: linear-gradient(to left,gray ,white );
+    
     font-family: 'Helvetica Neue', 'Arial', sans-serif; 
     font-size: 3.5em;
+
 }
 
 div#calculadora {
@@ -21,6 +23,7 @@ div#calculadora {
     display: flex;
     justify-content: flex-start; 
     flex-wrap: wrap; 
+    box-shadow: 1px 1px 12px black;
    
     
 
